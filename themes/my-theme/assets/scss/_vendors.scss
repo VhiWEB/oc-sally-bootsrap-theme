@@ -1,0 +1,19 @@
+//
+// Vendor file
+//
+// Includes all vendor SCSS files that contain usable output
+//
+
+// Example:
+// @import $vendor-path + 'select2-bootstrap-theme/src/select2-bootstrap-theme';
+
+// $fa-font-path: '../fonts';
+$fa-font-path: $vendor-path + '@fortawesome/fontawesome-free/webfonts';
+
+@import $vendor-path + '@fortawesome/fontawesome-free/scss/fontawesome';
+@import $vendor-path + '@fortawesome/fontawesome-free/scss/brands';
+@import $vendor-path + '@fortawesome/fontawesome-free/scss/regular';
+@import $vendor-path + '@fortawesome/fontawesome-free/scss/solid';
+@import $vendor-path + '@fortawesome/fontawesome-free/scss/v4-shims';
+
+
