@@ -13,9 +13,9 @@
     padding: 0.375rem 1.5rem;
 }
 
-//
-// Button Outline
-//
+
+
+
 
 
 .btn-outline-black {
@@ -26,233 +26,13 @@
     @include button-outline-variant(#fff, #000);
 }
 
-.btn-outline-primary {
-    @include button-outline-variant($soft-blue, $white);
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
+//
+// Button Outline Animate Hover
+//
 
-    &:hover::after {
-        bottom: 0px;
-    }
-    &::after {
-        content: '';
-        position: absolute;
-        bottom: -34px;
-        left: 0px;
-        z-index: -1;
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        background-color: $primary;
-        transition: all ease-in-out .2s;
-    }
-}
-
-.btn-outline-red {
-    @include button-outline-variant($soft-red, $white);
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-
-    &:hover::after {
-        bottom: 0px;
-    }
-    &::after {
-        content: '';
-        position: absolute;
-        bottom: -34px;
-        left: 0px;
-        z-index: -1;
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        background-color: $soft-red;
-        transition: all ease-in-out .2s;
-    }
-}
-
-.btn-outline-yellow {
-    @include button-outline-variant($pastel-yellow, $white);
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-
-    &:hover::after {
-        bottom: 0px;
-    }
-    &::after {
-        content: '';
-        position: absolute;
-        bottom: -34px;
-        left: 0px;
-        z-index: -1;
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        background-color: $pastel-yellow;
-        transition: all ease-in-out .2s;
-    }
-}
-
-.btn-outline-green {
-    @include button-outline-variant($pastel-green, $white);
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-
-    &:hover::after {
-        bottom: 0px;
-    }
-    &::after {
-        content: '';
-        position: absolute;
-        bottom: -34px;
-        left: 0px;
-        z-index: -1;
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        background-color: $pastel-green;
-        transition: all ease-in-out .2s;
-    }
-}
-
-.btn-outline-light-green {
-    @include button-outline-variant($light-green, $white);
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-
-    &:hover::after {
-        bottom: 0px;
-    }
-    &::after {
-        content: '';
-        position: absolute;
-        bottom: -34px;
-        left: 0px;
-        z-index: -1;
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        background-color: $light-green;
-        transition: all ease-in-out .2s;
-    }
-}
-
-.btn-outline-orange {
-    @include button-outline-variant($orange-zest, $white);
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-
-    &:hover::after {
-        bottom: 0px;
-    }
-    &::after {
-        content: '';
-        position: absolute;
-        bottom: -34px;
-        left: 0px;
-        z-index: -1;
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        background-color: $orange-zest;
-        transition: all ease-in-out .2s;
-    }
-}
-
-.btn-outline-deep-gray {
-    @include button-outline-variant($deep-gray, $white);
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-
-    &:hover::after {
-        bottom: 0px;
-    }
-    &::after {
-        content: '';
-        position: absolute;
-        bottom: -34px;
-        left: 0px;
-        z-index: -1;
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        background-color: $deep-gray;
-        transition: all ease-in-out .2s;
-    }
-}
-
-.btn-outline-black {
-    @include button-outline-variant($black, $white);
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-
-    &:hover::after {
-        bottom: 0px;
-    }
-    &::after {
-        content: '';
-        position: absolute;
-        bottom: -34px;
-        left: 0px;
-        z-index: -1;
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        background-color: $black;
-        transition: all ease-in-out .2s;
-    }
-}
-
-.btn-outline-pink {
-    @include button-outline-variant($pink-heliotrope, $white);
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-
-    &:hover::after {
-        bottom: 0px;
-    }
-    &::after {
-        content: '';
-        position: absolute;
-        bottom: -34px;
-        left: 0px;
-        z-index: -1;
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        background-color: $pink-heliotrope;
-        transition: all ease-in-out .2s;
-    }
-}
-
-.btn-outline-gray {
-    @include button-outline-variant($dark-gray, $white);
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-
-    &:hover::after {
-        bottom: 0px;
-    }
-    &::after {
-        content: '';
-        position: absolute;
-        bottom: -34px;
-        left: 0px;
-        z-index: -1;
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        background-color: $dark-gray;
-        transition: all ease-in-out .2s;
+@each $color, $value in $theme-colors {
+    .btn-outline-#{$color} {
+       @include animate-button($value);
     }
 }
 
@@ -283,7 +63,7 @@
 }
 
 
-.btn-green {
+.btn-pastel-green {
     background-color: $pastel-green;
     color: $white;
     &:focus {

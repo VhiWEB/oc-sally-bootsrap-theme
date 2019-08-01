@@ -23,7 +23,7 @@ $cyan:    #17a2b8;
 // customize color
 //
 
-$soft-blue:       #5576D1;
+$indigo:          #5576D1;
 $soft-red:        #FF6767;
 $pastel-yellow:   #FADA95;
 $pastel-green:    #AED75D;
@@ -34,12 +34,28 @@ $black:           #1A1A1A;
 $pink-heliotrope: #F747FF;
 $dark-gray:       #C1C1C1;
 
-
-$primary:       $soft-blue;
+$primary:       $indigo;
 $success:       $green;
 $info:          $cyan;
 $warning:       $yellow;
 $danger:        $red;
+
+//   
+// custom theme-colors
+// 
+$theme-colors: ()!default;
+$theme-colors: map-merge((
+    "primary":        $indigo,
+    "red":            $soft-red,
+    "pastel-yellow":  $pastel-yellow,
+    "pastel-green":   $pastel-green,
+    "light-green":    $light-green,
+    "orange":         $orange-zest,
+    "deep-gray":      $deep-gray,
+    "black":          $black,
+    "pink":           $pink-heliotrope,
+    "gray":           $dark-gray,
+), $theme-colors);
 
 
 
