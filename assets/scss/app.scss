@@ -2,17 +2,17 @@
 // Load all required stylesheets
 //    
   
-@import '_all';  
+@import '_all';   
     
-//   
-// Your app styles    
 //    
-    
+// Your app styles      
+//    
+     
 body {   
     padding-top: 56px;   
     background-color: $gray-100; 
 }  
      
 .bg-red {
-    background-color: $soft-red; 
-} 
+    background-color: $soft-red;  
+}  
