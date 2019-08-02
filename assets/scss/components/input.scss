@@ -136,32 +136,6 @@
 
 //form
 
-.card-wrapper {
-    position: relative;
-
-    .card-login {
-        width: 100%;
-        padding: 50px;
-        box-sizing: border-box;
-        border: 0px;
-        background-color: $white;
-        z-index: 1;
-        &::after {
-            content: '';
-            position: absolute;
-            bottom: 0px;
-            left: 10%;
-            z-index: -1;
-            width: 80%;
-            height: 30px;
-            box-shadow: 0px 0px 30px 0px lighten($color: $black, $amount: 60);
-        }
-
-        button {
-            width: 150px;
-        }
-    }
-}
 
 
 // .hover-animation {
