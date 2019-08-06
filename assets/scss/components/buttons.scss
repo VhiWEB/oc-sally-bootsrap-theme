@@ -32,112 +32,17 @@
 
 @each $color, $value in $theme-colors {
     .btn-outline-#{$color} {
-       @include animate-button($value);
+       @include animate-outline-button($value);
     }
 }
+
 
 //
 // Button Default
 //
 
-.btn-red {
-    background-color: $soft-red;
-    color: $white;
-    &:focus {
-        box-shadow: 0 0 0 0.2rem lighten($color: $soft-red, $amount: 10)
-    }
-    &:hover {
-        background-color: darken($color:  $soft-red, $amount: 30);
-    }
-}
-
-.btn-yellow {
-    background-color: $pastel-yellow;
-    color: $white;
-    &:focus {
-        box-shadow: 0 0 0 0.2rem lighten($color: $pastel-yellow, $amount: 10);
-    }
-    &:hover {
-        background-color: darken($color:  $pastel-yellow, $amount: 10);
-    }
-}
-
-
-.btn-pastel-green {
-    background-color: $pastel-green;
-    color: $white;
-    &:focus {
-        box-shadow: 0 0 0 0.2rem lighten($color: $pastel-green, $amount: 10);
-    }
-    &:hover {
-        background-color: darken($color:  $pastel-green, $amount: 10);
-    }
-}
-
-.btn-light-green {
-    background-color: $light-green;
-    color: $white;
-    &:focus {
-        box-shadow: 0 0 0 0.2rem lighten($color: $light-green, $amount: 10);
-    }
-    &:hover {
-        background-color: darken($color:  $light-green, $amount: 10);
-    }
-}
-
-
-.btn-orange {
-    background-color: $orange-zest;
-    color: $white;
-    &:focus {
-        box-shadow: 0 0 0 0.2rem lighten($color: $orange-zest, $amount: 10);
-    }
-    &:hover {
-        background-color: darken($color: $orange-zest, $amount: 10);
-    }
-}
-
-.btn-deep-gray {
-    background-color: $deep-gray;
-    color: $white;
-    &:focus {
-        box-shadow: 0 0 0 0.2rem lighten($color: $deep-gray, $amount: 10);
-    }
-    &:hover {
-        background-color: darken($color: $deep-gray, $amount: 10);
-    }
-}
-
-.btn-black {
-    background-color: $black;
-    color: $white;
-    &:focus {
-        box-shadow: 0 0 0 0.2rem lighten($color: $black, $amount: 20);
-    }
-    &:hover {
-        background-color: darken($color: $black, $amount: 10);
-    }
-}
-
-.btn-pink {
-    background-color: $pink-heliotrope;
-    color: $white;
-    &:focus {
-        box-shadow: 0 0 0 0.2rem lighten($color: $pink-heliotrope, $amount: 20);
-    }
-    &:hover {
-        background-color: darken($color: $pink-heliotrope, $amount: 20);
-    }
-}
-
-
-.btn-gray {
-    background-color: $dark-gray;
-    color: $white;
-    &:focus {
-        box-shadow: 0 0 0 0.2rem lighten($color: $dark-gray, $amount: 20);
-    }
-    &:hover {
-        background-color: darken($color: $dark-gray, $amount: 20);
+@each $bg-color, $color in $theme-colors {
+    .btn-#{$bg-color} {
+        @include animate-button($color);
     }
 }
