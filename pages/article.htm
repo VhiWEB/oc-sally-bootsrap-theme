@@ -4,23 +4,21 @@ layout = 'default'
 is_hidden = 0
 ==
 
-<div class="wrapper">
+<div class="wrapper py-4">
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
-                <div class="fp24 font-weight-bold">Article</div>
+                <div class="fp24 font-weight-bold text-uppercase">Article</div>
                 <a href="">
                     <div class="img-container main-news">
                         <figure>
                             <img src="https://picsum.photos/200/300/?blur" alt="">
                         </figure>
-                        <div class="content-news d-flex flex-column justify-content-between align-items-start">
-                            <div class="d-flex flex-row">
+                        <div class="content-news d-flex flex-column justify-content-end align-items-start">
+                            <div class="headline">
                                 <label for="" class="badge-main-news font-weight-bold text-uppercase mr-1">
                                     National
                                 </label>
-                            </div>
-                            <div class="headline">
                                 <div class="h3 text-white">lorem ipsum dolor sit amet</div>
                                 <p class="fp-12 m-0 text-white">{{ date|date('d, M Y') }}</p>
                             </div>
@@ -45,9 +43,12 @@ is_hidden = 0
                     </div>
                 </div>
                 {% endfor %}
+                <div class="d-flex justify-content-center w-100">
+                    <button class="btn btn-outline-black fp16 w-75">Load More</button>
+                </div>
             </div>
             <div class="col-lg-4">
-                <div class="fp24 font-weight-bold">Popular</div>
+                <div class="fp24 font-weight-bold text-uppercase">Popular</div>
                 <div class="card card-item card-shadow border-0">
                     <figure class="card-img-container">
                         <img src="https://picsum.photos/150/150/?blur" class="card-img" alt="">

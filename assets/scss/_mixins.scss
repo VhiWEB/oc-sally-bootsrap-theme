@@ -25,7 +25,7 @@
     &::before {
         content: '';
         position: absolute;
-        top: -34px;
+        top: -44px;
         left: 0px;
         z-index: -1;
         width: 100%;
@@ -37,7 +37,7 @@
     &::after {
         content: '';
         position: absolute;
-        bottom: -34px;
+        bottom: -44px;
         left: 0px;
         z-index: -1;
         width: 100%;
@@ -97,11 +97,11 @@
         color: $background-color;
 
         &::after {
-            bottom: -33px;
+            bottom: -44px;
         }
 
         &::before {
-            top: -33px;
+            top: -44px;
         }
     }
     

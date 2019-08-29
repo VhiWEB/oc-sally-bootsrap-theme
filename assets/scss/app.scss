@@ -156,3 +156,19 @@ body {
         background-position: 0% 50%;
       }
 }
+
+.share-article {
+    ul {
+        display: flex;
+        padding: 0px;
+        li {
+            list-style: none;
+            padding: 0px 5px;
+            margin-right: 10px;
+            i {
+                cursor: pointer;
+                font-size: 25px;
+            }
+        }
+    }
+}
