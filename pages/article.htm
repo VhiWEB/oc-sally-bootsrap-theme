@@ -1,0 +1,69 @@
+title = 'Article'
+url = '/article'
+layout = 'default'
+is_hidden = 0
+==
+
+<div class="wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="fp24 font-weight-bold">Article</div>
+                <a href="">
+                    <div class="img-container main-news">
+                        <figure>
+                            <img src="https://picsum.photos/200/300/?blur" alt="">
+                        </figure>
+                        <div class="content-news d-flex flex-column justify-content-between align-items-start">
+                            <div class="d-flex flex-row">
+                                <label for="" class="badge-main-news font-weight-bold text-uppercase mr-1">
+                                    National
+                                </label>
+                            </div>
+                            <div class="headline">
+                                <div class="h3 text-white">lorem ipsum dolor sit amet</div>
+                                <p class="fp-12 m-0 text-white">{{ date|date('d, M Y') }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <hr>
+                {% for i in 1..4 %}
+                <div class="card card-item card-shadow border-0 my-3">
+                    <figure class="card-img-container">
+                        <img src="https://picsum.photos/150/150/?blur" class="card-img" alt="">
+                    </figure>
+                    <div class="card-body d-flex flex-row">
+                        <div class="card-desc">
+                            <b class="fp16">
+                                Lorem ipsum
+                            </b>
+                            <p class="fp14">
+                                lorem ipsum dolor sit amet
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="col-lg-4">
+                <div class="fp24 font-weight-bold">Popular</div>
+                <div class="card card-item card-shadow border-0">
+                    <figure class="card-img-container">
+                        <img src="https://picsum.photos/150/150/?blur" class="card-img" alt="">
+                    </figure>
+                    <div class="card-body d-flex flex-row">
+                        <div class="card-desc">
+                            <b class="fp16">
+                                Lorem ipsum
+                            </b>
+                            <p class="fp14">
+                                lorem ipsum dolor sit amet
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

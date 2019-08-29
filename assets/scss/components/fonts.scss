@@ -1,5 +1,5 @@
 
-@for $font from 10 through 20 {
+@for $font from 10 through 50 {
     .fp#{$font} {
         font-size: 0px + $font;
     }
