@@ -27,21 +27,19 @@ is_hidden = 0
                 </a>
                 <hr>
                 {% for i in 1..4 %}
-                <div class="card card-item card-shadow border-0 my-3">
+                <a class="card card-news border-0 my-3">
                     <figure class="card-img-container">
                         <img src="https://picsum.photos/150/150/?blur" class="card-img" alt="">
                     </figure>
-                    <div class="card-body d-flex flex-row">
+                    <div class="card-body">
                         <div class="card-desc">
-                            <b class="fp16">
-                                Lorem ipsum
-                            </b>
-                            <p class="fp14">
-                                lorem ipsum dolor sit amet
-                            </p>
+                            <div class="category fp10 text-uppercase text-muted">National</div>
+                            <b class="fp16 card-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab enim illum, eveniet nulla odio aspernatur vitae obcaecati beatae accusantium sequi.</b>
                         </div>
+                        <p class="fp12 text-muted m-0">19 agustus 2019</p>
                     </div>
-                </div>
+                </a>
+                <hr>
                 {% endfor %}
                 <div class="d-flex justify-content-center w-100">
                     <button class="btn btn-outline-black fp16 w-75">Load More</button>
@@ -49,7 +47,7 @@ is_hidden = 0
             </div>
             <div class="col-lg-4">
                 <div class="fp24 font-weight-bold text-uppercase">Popular</div>
-                <div class="card card-item card-shadow border-0">
+                <a class="card card-news border-0">
                     <figure class="card-img-container">
                         <img src="https://picsum.photos/150/150/?blur" class="card-img" alt="">
                     </figure>
@@ -58,12 +56,12 @@ is_hidden = 0
                             <b class="fp16">
                                 Lorem ipsum
                             </b>
-                            <p class="fp14">
+                            <p class="fp12 text-muted">
                                 lorem ipsum dolor sit amet
                             </p>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
