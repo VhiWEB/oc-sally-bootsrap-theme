@@ -47,6 +47,7 @@
     }
 
     &:hover {
+        // color: $background-color;
         &::after{
             bottom: 0px;
         }

@@ -1,0 +1,73 @@
+title = 'documentation'
+url = 'docs'
+layout = 'default'
+is_hidden = 0
+==
+
+<section class="wrapper wrapper-docs">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <nav aria-label="breadcraumb">
+                    <ol class="breadcrumb bg-transparent px-0">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Documentation</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="col-lg-6">
+                <div class="h2">Documentation</div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima corrupti, cum assumenda consectetur
+                    est labore tenetur facilis necessitatibus aspernatur autem quidem? Blanditiis obcaecati veritatis
+                    voluptatem iure aut quaerat dolore id?</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row mb-4">
+            <div class="col-lg-4">
+                <a href="{{ 'cards' | page }}" class="card card-components border-0">
+                    <figure>
+                        <img src="{{('assets/images/card-image.png' | theme )}}" alt="">
+                    </figure>
+                    <div class="card-body">
+                        <b>Card</b>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4">
+                <a href="{{ 'buttons' | page }}" class="card card-components border-0">
+                    <figure>
+                        <img src="{{('assets/images/card-image.png' | theme )}}" alt="">
+                    </figure>
+                    <div class="card-body">
+                        <b>Button</b>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4">
+                <a href="{{ 'inputs' | page }}" class="card card-components border-0">
+                    <figure>
+                        <img src="{{('assets/images/card-image.png' | theme )}}" alt="">
+                    </figure>
+                    <div class="card-body">
+                        <b>Input</b>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-lg-4">
+                <a href="{{ 'forms' | page }}" class="card card-components border-0">
+                    <figure>
+                        <img src="{{('assets/images/card-image.png' | theme )}}" alt="">
+                    </figure>
+                    <div class="card-body">
+                        <b>Form</b>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>

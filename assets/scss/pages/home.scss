@@ -1,0 +1,23 @@
+.wrapper-home {
+    width: 100%;
+    height: 100vh;
+    background-color: $orange;
+    margin-top: -95px;
+    .h2 {
+        font-weight: 600;
+        font-size: 32px;
+        color: $white;
+    }
+
+    p {
+        color: $white;
+        margin-bottom: 0px;
+    }
+
+    a {
+        width: 200px;
+        &:hover {
+            color: $orange;
+        }
+    }
+}

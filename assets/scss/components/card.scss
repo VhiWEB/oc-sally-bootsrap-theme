@@ -87,3 +87,30 @@ a.card-news {
 
     }
 }
+
+.card-components {
+    background-color: $orange;
+    position: relative;
+    height: 200px;
+    color: $white;
+    &:hover {
+        text-decoration: none;
+    }
+    figure {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        margin: 0px;
+        width: 300px;
+        img {
+            width: 100%;
+        }
+    }
+
+    .card-body {
+        b {
+            color: $white;
+            font-size: 25px;
+        }
+    }
+}
